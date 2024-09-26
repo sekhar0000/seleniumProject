@@ -1,0 +1,17 @@
+#!bin/bash
+dnf list installed mysql -y
+if [ $? -ne 0 ]
+then
+    echo "Mysql not installed, going to installaing"
+    dnf install mysql -y
+    if [ #? -ne 0 ]  
+    #  #? it means to display the software is installed or not  -ne is not equal & -eq is equal to  0 means software install success           
+    then
+        echo "Mysql installation failure"
+        exit 1
+    else
+        echo "Mysql installation success"
+    fi
+else
+    echo "Mysql is already installed"
+fi            

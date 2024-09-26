@@ -1,0 +1,2 @@
+echo "I want to pass all the variables : $@"
+echo "knowing how many variables passed : $#"

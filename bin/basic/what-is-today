@@ -1,0 +1,5 @@
+Number =$1
+
+if [ $Number -gt 20 ]
+then
+    echo "given number"
